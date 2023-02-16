@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>so</title>
+	<style>
+		body {
+			background-color: #fafafa;
+			font-family: Arial, sans-serif;
+			overflow: hidden;
+		}
+		h1 {
+			font-size: 5rem;
+			text-align: center;
+			color: #333333;
+			margin-top: 20%;
+			animation: zoomIn 1s forwards;
+		}
+		#buttons {
+			display: flex;
+			justify-content: center;
+			margin-top: 50px;
+			animation: slideIn 1s forwards;
+		}
+		.btn {
+			padding: 15px 40px;
+			background-color: #007bff;
+			color: #ffffff;
+			border: none;
+			border-radius: 5px;
+			margin: 10px;
+			font-size: 1.5rem;
+			cursor: pointer;
+			animation: fadeIn 1s forwards;
+		}
+		.btn:hover {
+			background-color: #0056b3;
+		}
+		@keyframes zoomIn {
+			from {
+				transform: scale(0.5);
+				opacity: 0;
+			}
+			to {
+				transform: scale(1);
+				opacity: 1;
+			}
+		}
+		@keyframes slideIn {
+			from {
+				transform: translateX(-100%);
+			}
+			to {
+				transform: translateX(0);
+			}
+		}
+		@keyframes fadeIn {
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+		}
+	</style>
+</head>
+<body>
+	<h1>SISTEMAS OPERATIVOS</h1>
+	<div id="buttons">
+		<button class="btn" onclick="location.href='anim.html'">PROCESOS</button>
+		<button class="btn" onclick="location.href='pagina2.html'">PROCESOS 2</button>
+	</div>
+</body>
+</html>
